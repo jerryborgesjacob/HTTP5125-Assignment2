@@ -30,7 +30,11 @@ namespace HTTP5125_Assignment2.Controllers
             {
                 result = "Please ensure that there are atleast 28 cupcakes.";
             }
-            else
+            else if (leftOver == 1) 
+            { 
+                result = "There is " + leftOver + " cupcake leftover.";
+            }
+            else 
             {
                 result = "There are " + leftOver + " cupcakes leftover.";
             }
